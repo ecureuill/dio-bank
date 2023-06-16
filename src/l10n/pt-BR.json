@@ -1,0 +1,9 @@
+{
+	"controls.buttons.menu.close.description": "close menu",
+	"controls.buttons.menu.open.description": "open menu",
+			
+	"error_message": {},
+
+	"pages.home.heading.title": "Hello",
+	"pages.home.heading.subtitle": "Welcome"
+}

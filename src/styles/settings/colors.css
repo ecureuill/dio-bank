@@ -1,0 +1,25 @@
+.mainTheme {
+	--color-base: #FFFFFF;
+
+	--color-negative: #FFFFFF;
+	--color-zero: #FFFFFF;
+	
+	--color-primary: #FFFFFF;
+	--color-secondary: #FFFFFF;
+	--color-tertiary: #FFFFFF;
+	--color-quaternary: #FFFFFF;
+	--color-quinary: #FFFFFF;
+}
+
+.blackTheme {
+	--color-base: #FFFFFF;
+	
+	--color-negative: #FFFFFF;
+	--color-zero: #FFFFFF;
+	
+	--color-primary: #FFFFFF;
+	--color-secondary: #FFFFFF;
+	--color-tertiary: #FFFFFF;
+	--color-quaternary: #FFFFFF;
+	--color-quinary: #FFFFFF;
+}

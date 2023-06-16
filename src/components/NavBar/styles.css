@@ -1,0 +1,28 @@
+.NavBar {
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	background: var(--color-primary);
+}
+
+.NavBar--mobile {
+	width: 100%;
+	height: fit-content;
+
+	justify-content: start;
+	align-items: center;
+}
+
+.NavBar__item {
+	color: var(--color-zero);
+	text-decoration: none;
+}
+
+.NavBar__separator {
+	width: 146px;
+	height: 1px;
+
+	color: #FFFFFF;
+	border: 1px solid #FFFFFF;
+}

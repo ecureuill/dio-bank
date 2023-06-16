@@ -1,0 +1,8 @@
+@import-normalize;
+
+* { 
+	box-sizing: border-box;
+	color: unset;
+	margin :0;
+	padding: 0;
+}

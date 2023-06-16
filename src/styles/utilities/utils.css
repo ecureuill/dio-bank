@@ -1,0 +1,60 @@
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.border-none {
+  border: 0;
+}
+
+.br-none {
+  border-radius: 0;
+}
+
+.bg-none {
+  background: transparent;
+}
+
+.screen-height {
+  height: 100vh;
+}
+
+.screen-width {
+  width: 100vh;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.all-center {
+  justify-content: center;
+  align-items: center;
+}
+
+
+.center {
+}
+
+.hover-indicator:hover {
+    background: var(--color-);
+    position: relative;
+}
