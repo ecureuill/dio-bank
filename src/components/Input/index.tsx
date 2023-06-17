@@ -15,9 +15,9 @@ const Input = ( {label, errormessage, ...props}: InputProps): JSX.Element => {
 				<Text variant='paragraph' size='tiny'>{label}</Text>
 			</label>
 			<input id={id} className='Input__field' {...props}/>
-			<span className='Input__errortext' role='alert' aria-live='assertive'>
+			<Text className='Input__errortext' role='alert' aria-live='assertive'>
 				{errormessage}
-			</span>
+			</Text>
 		</div>
 	);
 };
