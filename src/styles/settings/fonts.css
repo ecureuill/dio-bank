@@ -10,4 +10,5 @@
   --font-icon: 'Material Icons';
  
   --font-base: 500 var(--size-tiny)/var(--line-tiny) var(--font-primary); 
+  --font-button: small-caps 800 var(--size-small)/var(--line-small) var(--font-primary); 
 }

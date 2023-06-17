@@ -1,9 +1,8 @@
 .Button {
 	width: fit-content;
 
-	font: var(--font-normal);
+	font: var(--font-button);
 	color: var(--color-zero);
-	font-weight: 700;
 
 	padding: var(--padding-small);
 	border: 0;
