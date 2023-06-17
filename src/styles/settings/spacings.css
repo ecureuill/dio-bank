@@ -1,0 +1,15 @@
+:root {
+	--spacing-8: 8px;
+	--spacing-20: 20px;
+
+	--padding-tiny: var(--spacing-8);
+	--padding-small: calc(var(--spacing-8) * 2);
+	--padding-medium: var(--spacing-20);
+	--padding-large: calc(var(--spacing-8) * 3);
+	--padding-big: calc(var(--spacing-20) * 2);
+
+	--radius: calc(var(--spacing-8) * 2);
+	
+	--gap-tiny: var(--spacing-8);
+	--gap-small: calc(var(--spacing-8) * 2);
+}

@@ -1,0 +1,5 @@
+.Avatar {
+	border-radius: var(--radius);
+	width: 55px;
+	height: 55px;
+}

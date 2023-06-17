@@ -13,6 +13,7 @@
 	font: var(--font-normal);
 
 	border: 0;
+	padding: var(--padding-tiny);
 }
 
 .Input__errortext {

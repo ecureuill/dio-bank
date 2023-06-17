@@ -3,6 +3,7 @@ import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { Context as ResponsiveContext } from 'react-responsive';
 import Header from '.';
+import { AllTheProvidersAutheticated } from '../../@types/wrapper';
 
 
 describe('Header', () => {
@@ -20,36 +21,42 @@ describe('Header', () => {
 		it('should render a button named menu', () => {
 			render(
 				<ResponsiveContext.Provider value={{ width: faker.number.int({max: MOBILE_MAX_WIDTH}) }}>
-					<Header />, 
+					<AllTheProvidersAutheticated>
+						<Header />
+					</AllTheProvidersAutheticated>
 				</ResponsiveContext.Provider>
 			);
 
 			expect(screen.getByRole('button', { name: 'menu'})).toBeInTheDocument();
 		});
 		
-		it('should render a button with description [abrir o menu]', () => {
+		it('should render a button with description [abrir menu]', () => {
 			render(
 				<ResponsiveContext.Provider value={{ width: faker.number.int({max: MOBILE_MAX_WIDTH}) }}>
-					<Header />
+					<AllTheProvidersAutheticated>
+						<Header />
+					</AllTheProvidersAutheticated>
 				</ResponsiveContext.Provider>
 			);
 
-			expect(screen.getByRole('button', { description: 'abrir o menu'})).toBeInTheDocument();
+			expect(screen.getByRole('button', { description: 'abrir menu'})).toBeInTheDocument();
 		});
 		
-		it('should render a button with description [fechar o menu] after click on menu button', async () => {
+		it('should render a button with description [fechar menu] after click on menu button', async () => {
 			const user = userEvent.setup();
 			
 			render(
 				<ResponsiveContext.Provider value={{ width: faker.number.int({max: MOBILE_MAX_WIDTH}) }}>
-					<Header />
+					<AllTheProvidersAutheticated>
+						<Header />
+					</AllTheProvidersAutheticated>
 				</ResponsiveContext.Provider>
 			);
 
 			const menu = screen.getByRole('button', { name: 'menu' });
 			await user.click(menu);
 
-			expect(screen.getByRole('button', { description: 'fechar o menu'})).toBeInTheDocument();
+			expect(screen.getByRole('button', { description: 'fechar menu'})).toBeInTheDocument();
 		});
 		
 		it('should render navigation menu after click on menu button', async () => {
@@ -57,7 +64,9 @@ describe('Header', () => {
 			
 			render(
 				<ResponsiveContext.Provider value={{ width: faker.number.int({max: MOBILE_MAX_WIDTH}) }}>
-					<Header />
+					<AllTheProvidersAutheticated>
+						<Header />
+					</AllTheProvidersAutheticated>
 				</ResponsiveContext.Provider>
 			);
 
@@ -69,12 +78,14 @@ describe('Header', () => {
 			expect(nav).toBeInTheDocument();
 		});
 		
-		it('should render a button with description [abrir o menu] after click on menu button 2 times', async () => {
+		it('should render a button with description [abrir menu] after click on menu button 2 times', async () => {
 			const user = userEvent.setup();
 			
 			render(
 				<ResponsiveContext.Provider value={{ width: faker.number.int({max: MOBILE_MAX_WIDTH}) }}>
-					<Header />
+					<AllTheProvidersAutheticated>
+						<Header />
+					</AllTheProvidersAutheticated>
 				</ResponsiveContext.Provider>
 			);
 
@@ -83,7 +94,7 @@ describe('Header', () => {
 
 			await user.click(menu);
 
-			expect(screen.getByRole('button', { description: 'abrir o menu'})).toBeInTheDocument();
+			expect(screen.getByRole('button', { description: 'abrir menu'})).toBeInTheDocument();
 		});
 	});
 

@@ -1,62 +1,30 @@
 .Button {
+	width: fit-content;
+
+	font: var(--font-normal);
+	color: var(--color-zero);
+	font-weight: 700;
+
+	padding: var(--padding-small);
+	border: 0;
+	border-radius: var(--radius);
 	background-color: var(--color-primary);
 }
 
-.Button__content {
-	width: 100%;
-	height: 100%;
-	
-	display: inline-flex;
-	align-items: center;
-}
-
-.Button__content, .Button__content > * {
-	font: var(--font-normal);
-	font-weight: 700;
-	color: var(--color-zero);
-}
-
-.Button__content--center {
-	justify-content: center;
-}
-
-.Button__content--space-between {
-	justify-content: space-between;
-}
 
 .Button--fill {
 	width: 100%;
 }
 
-.Button--default {
-	min-width: 164px;
-}
-
-.Button--tiny {
+.Button--icon {
+	min-width: 32px;
 	width: 32px;
-}
+	height: 32px;
 
-.Button--pill {
-	border-radius: 16px;
+	background-color: transparent;	
+	padding: 0;
 }
 
 .Button--rectangle {
 	border-radius: 0px;
-}
-
-.Button--icon {	
-	height: 40px;
-	padding: 0;
-}
-
-.Button--icon > svg, .Button__content > svg, .Button__content > .material-icon {
-	font-size: 32px;
-}
-
-.Button--3d {
-	box-shadow: 4px 4px 0px var(--color-negative);
-}
-
-.Button--2d {
-	box-shadow: none;
 }

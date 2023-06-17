@@ -8,7 +8,7 @@ interface ILocaleContext {
 	updateLocale: (locale: string) => void
 }
 
-export const localeContext = createContext<ILocaleContext>({} as ILocaleContext);
+export const LocaleContext = createContext<ILocaleContext>({} as ILocaleContext);
 
 export const LocaleContextProvider = ({ children }: PropsWithChildren) => {
 	const [ locale, setLocale ] = useState('pt-BR');
@@ -39,8 +39,8 @@ export const LocaleContextProvider = ({ children }: PropsWithChildren) => {
 
 
 	return (
-		<localeContext.Provider value={{locale, resources, updateLocale}}>
+		<LocaleContext.Provider value={{locale, resources, updateLocale}}>
 			{children}
-		</localeContext.Provider>
+		</LocaleContext.Provider>
 	);
 };

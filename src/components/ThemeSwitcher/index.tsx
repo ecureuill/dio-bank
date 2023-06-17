@@ -1,12 +1,12 @@
 import { useContext } from 'react';
 import {Button, Icons} from '../.';
-import { themeContext } from '../../context/theme.context';
+import { ThemeContext } from '../../context/theme.context';
 
 const ThemeSwitcher = (): JSX.Element => {
-	const { toogleTheme, isDarkmode } = useContext(themeContext);
+	const { toogleTheme, isDarkmode } = useContext(ThemeContext);
 
 	return (
-		<Button className='ThemeSwitcher' shape='icon' size='tiny' depth='2d' onClick={() => toogleTheme()} >
+		<Button className='ThemeSwitcher' size='icon' onClick={() => toogleTheme()} >
 			{
 				isDarkmode? 
 					<Icons>sunny</Icons>

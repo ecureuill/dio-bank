@@ -1,9 +1,9 @@
 import { useContext } from 'react';
-import { localeContext } from '../../context/locale.context';
+import { LocaleContext } from '../../context/locale.context';
 
 const HomePage = (): JSX.Element => {
 
-	const { resources } = useContext(localeContext);
+	const { resources } = useContext(LocaleContext);
 
 	return (
 		<>

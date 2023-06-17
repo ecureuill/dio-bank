@@ -1,25 +1,23 @@
-.mainTheme {
-	--color-base: #FFFFFF;
+:root {
+	--color-base: #2d3142;
 
-	--color-negative: #FFFFFF;
+	--color-negative: #2d3142;
 	--color-zero: #FFFFFF;
 	
-	--color-primary: #FFFFFF;
-	--color-secondary: #FFFFFF;
-	--color-tertiary: #FFFFFF;
-	--color-quaternary: #FFFFFF;
-	--color-quinary: #FFFFFF;
+	--color-primary: #e85a4a;
+	--color-secondary: #EAE8FF;
+	--color-tertiary: #B0D7FF;
+	--color-quaternary: #9d4237;
+
+	--color-gradient:  linear-gradient(147deg, var(--color-negative), var(--color-quaternary) 42%, var(--color-primary) 91%);
 }
 
-.blackTheme {
+.darkTheme {
 	--color-base: #FFFFFF;
 	
-	--color-negative: #FFFFFF;
+	--color-negative: #2d3142;
 	--color-zero: #FFFFFF;
 	
-	--color-primary: #FFFFFF;
-	--color-secondary: #FFFFFF;
-	--color-tertiary: #FFFFFF;
-	--color-quaternary: #FFFFFF;
-	--color-quinary: #FFFFFF;
+	--color-primary: #e85a4a;
+	--color-secondary: #2d3142;
 }

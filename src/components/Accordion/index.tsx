@@ -36,9 +36,6 @@ const Section = ({title, children}: PropsWithChildren<SectionProps>): JSX.Elemen
 			<Text variant='title-3' className='Accordion__title'>
 				<Button  className='Accordion__trigger'
 					size='fill'
-					shape='rectangle'
-					depth='2d'
-					align='space-between'
 					id={idTitle}
 					aria-expanded={expanded}
 					aria-controls={idPannel}

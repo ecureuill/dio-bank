@@ -6,12 +6,12 @@ interface IThemeContext {
 	toogleTheme: () => void
 }
 
-export const themeContext = createContext<IThemeContext>({} as IThemeContext);
+export const ThemeContext = createContext<IThemeContext>({} as IThemeContext);
 
 export const ThemeProvider = ({children}: PropsWithChildren) => {
 
 	const [isDarkmode, setIsDarkmode] = useState(false);
-	const theme = isDarkmode ? 'borealTheme' : 'summerTheme';
+	const theme = isDarkmode ? 'darkTheme' : '';
 
 	const toogleTheme = () => {
 		localStorage.setItem('@APP:theme', JSON.stringify((!isDarkmode)));
@@ -25,11 +25,11 @@ export const ThemeProvider = ({children}: PropsWithChildren) => {
 	}, []); 
 	
 	return (
-		<themeContext.Provider value={{isDarkmode, toogleTheme}}>
+		<ThemeContext.Provider value={{isDarkmode, toogleTheme}}>
 			<Helmet>
 				<body className={theme}/>
 			</Helmet>
 			{children}
-		</themeContext.Provider>
+		</ThemeContext.Provider>
 	);
 };

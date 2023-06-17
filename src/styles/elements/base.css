@@ -24,11 +24,16 @@ body, #root{
 main {
 	overflow-y: auto;
 	overflow-x: hidden;
+
+	
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	gap: var(--gap-small);
 	
 	flex-grow: 1;
-	
-	text-align: center;
 
+	padding: var(--padding-medium);
 }
 
 header{
@@ -40,6 +45,3 @@ footer{
 	flex-grow: 0;
 	flex-shrink: 0;
 }
-
-
-

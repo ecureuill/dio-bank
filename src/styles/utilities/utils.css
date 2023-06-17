@@ -9,6 +9,16 @@
   width: 1px;
 }
 
+.hover-indicator:hover {
+    background: var(--color-);
+    position: relative;
+}
+
+.center {
+  text-align: center;
+}
+
+/************* BORDER *************/
 .border-none {
   border: 0;
 }
@@ -17,9 +27,13 @@
   border-radius: 0;
 }
 
+/************* BACKGROUND *************/
+
 .bg-none {
   background: transparent;
 }
+
+/************* SIZE *************/
 
 .screen-height {
   height: 100vh;
@@ -28,6 +42,8 @@
 .screen-width {
   width: 100vh;
 }
+
+/************* FLEX *************/
 
 .flex-col {
   display: flex;
@@ -50,11 +66,10 @@
   align-items: center;
 }
 
-
-.center {
+.gap-tiny {
+  gap: var(--gap-tiny);
 }
 
-.hover-indicator:hover {
-    background: var(--color-);
-    position: relative;
+.gap-small {
+  gap: var(--gap-small);
 }

@@ -1,4 +1,5 @@
 import Accordion from './Accordion';
+import Avatar from './Avatar';
 import Button from './Button';
 import Card from './Card';
 import Header from './Header';
@@ -10,5 +11,5 @@ import Tablet from './MediaQuery/Tablet';
 import Text from './Text';
 
 
-export { Accordion, Card, Button, Header,Icons, Input, Mobile, NavBar, Tablet, Text };
+export { Accordion, Avatar, Card, Button, Header,Icons, Input, Mobile, NavBar, Tablet, Text };
 
