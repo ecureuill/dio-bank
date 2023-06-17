@@ -1,23 +1,26 @@
 :root {
-	--color-base: #2d3142;
+
 
 	--color-negative: #2d3142;
 	--color-zero: #FFFFFF;
 	
+
 	--color-primary: #7E1B10;
 	--color-secondary: #EAE8FF;
 	--color-tertiary: #e85a4a;
 	--color-quaternary: #9d4237;
 
+
+	--color-base: var(--color-negative);
+	--color-error: var(--color-primary); 
+
 	--color-gradient:  linear-gradient(147deg, var(--color-negative), var(--color-quaternary) 42%, var(--color-tertiary) 91%);
 }
 
 .darkTheme {
-	--color-base: #FFFFFF;
-	
-	--color-negative: #2d3142;
-	--color-zero: #FFFFFF;
-	
-	--color-primary: #7E1B10;
 	--color-secondary: #2d3142;
+	--color-tertiary: #EAE8FF;
+
+	--color-base: var(--color-zero);
+	--color-error: var(--color-tertiary); 
 }

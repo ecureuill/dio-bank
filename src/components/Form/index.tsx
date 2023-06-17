@@ -1,7 +1,6 @@
 import { FormEvent, PropsWithChildren, SetStateAction } from 'react';
 import { Icons, Text} from '../.';
 import { FormDataState } from '../../utils/types';
-import './styles.css';
 
 type FormProps = {
 	title: string;
@@ -42,7 +41,7 @@ const Form = ( {children, title, error, handleSubmit, setFormData}: PropsWithChi
 			<Text variant='title-1' size='medium'>{title}</Text>
 			{error !== '' && <>
 				
-				<Text className='Form__errortext'><Icons>warning</Icons>{error}</Text>
+				<Text className='error'><Icons>warning</Icons>{error}</Text>
 			</>
 			}
 				

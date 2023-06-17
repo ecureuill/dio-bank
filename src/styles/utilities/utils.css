@@ -18,6 +18,9 @@
   text-align: center;
 }
 
+.error {
+  color: var(--color-error)
+}
 /************* BORDER *************/
 .border-none {
   border: 0;
