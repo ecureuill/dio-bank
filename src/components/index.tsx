@@ -2,6 +2,7 @@ import Accordion from './Accordion';
 import Avatar from './Avatar';
 import Button from './Button';
 import Card from './Card';
+import Carousel from './Carousel';
 import Form from './Form';
 import Header from './Header';
 import Icons from './Icons';
@@ -12,5 +13,5 @@ import NavBar from './NavBar';
 import Text from './Text';
 
 
-export { Accordion, Avatar, Button, Card, Form, Header, Icons, Input, Mobile, NavBar, Tablet, Text };
+export { Accordion, Avatar, Button, Card, Carousel, Form, Header, Icons, Input, Mobile, NavBar, Tablet, Text };
 
