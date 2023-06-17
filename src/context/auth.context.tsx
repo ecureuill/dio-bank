@@ -1,4 +1,3 @@
-import { fakerPT_BR } from '@faker-js/faker';
 import { createContext, PropsWithChildren, useEffect, useState } from 'react';
 import { IUser } from '../utils/interfaces';
 import data from '../services/users.json';
