@@ -1,9 +1,12 @@
+import { fakerPT_BR } from '@faker-js/faker';
 import { createContext, PropsWithChildren, useEffect, useState } from 'react';
+import { IUser } from '../utils/interfaces';
+import data from '../services/users.json';
 
 interface IAuthContext {
 	authenticated: boolean
 	loading: boolean,
-	user: any,
+	user: IUser | null,
 	signIn: (email: string, password: string) => Promise<boolean>,
 	signOut: () => void,
 	updateUser: (arg: {[key: string]: any}) => void,
@@ -14,20 +17,29 @@ interface IAuthContext {
 export const AuthContext = createContext<IAuthContext>({} as IAuthContext);
 
 export const AuthProvider = ({children}: PropsWithChildren): JSX.Element => {
-	const [user, setUser] = useState<any>(null);
+	const [user, setUser] = useState<IUser|null>(null);
 	const [loading, setLoading] = useState(true);
 	const [error, setError] = useState('');
 
 	useEffect(() =>{
-		const data = localStorage.getItem('@APP:user');
+		const email = localStorage.getItem('@APP:user');
 		
-		if(data !== null){
-			setUser(JSON.parse(data));
-			setLoading(false);
+		if(email !== null){
 
-			setTimeout(() => {
-				signOut();
-			}, 60000);
+			const user = data.users.find(user => user.email === email);
+			if(user === undefined)
+			{
+				setError('Unexpected error');
+				setLoading(false);
+			}
+			else {
+				setUser(user);
+				setLoading(false);
+			
+				setTimeout(() => {
+					signOut();
+				}, 120000);
+			}
 		}
 		else
 		{
@@ -39,14 +51,22 @@ export const AuthProvider = ({children}: PropsWithChildren): JSX.Element => {
 		
 		setError('');
 
-		if(email === 'admin@mail.com' && password === '123aSd7')
+		const user = data.users.find(user => user.email === email);
+		if(user === undefined)
 		{
-			localStorage.setItem('@APP:user', JSON.stringify('admin') );
-			setUser('admin');
+			setError('Wrong credentials');
+			return false;
+		}
+
+
+		if(user.password === password)
+		{
+			localStorage.setItem('@APP:user', user.email );
+			setUser(user);
 
 			setTimeout(() => {
 				signOut();
-			}, 60000);
+			}, 120000);
 			
 			return true;
 		}
