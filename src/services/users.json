@@ -1,0 +1,16 @@
+{
+	"users": [
+		{
+			"name": "Admin",
+			"email": "admin@mail.com",
+			"password": "123aSd7",
+			"avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/509.jpg"
+		},
+		{
+			"name": "Suélen",
+			"email": "suelen@mail.com",
+			"password": "12345678",
+			"avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/337.jpg"
+		}
+	]
+}
