@@ -1,0 +1,11 @@
+.OnBoardPage {
+	background: var(--color-gradient);
+}
+
+.OnBoardPage__logo {
+	width: 90%;
+	height: 50%;
+
+	position: absolute;
+	top: 20%;
+}
