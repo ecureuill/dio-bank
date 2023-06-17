@@ -3,19 +3,20 @@
 	
 	display: inline-flex;
 	flex-direction: column;
-	gap: var(--spacing-gap-small)
+	gap: var(--spacing-gap-small);
 }
 
 .Input__field {
 	width: 100%;
 	height: 48px;
 
-	font: var(--font-normal);
+	font: var(--font-base);
+	color: var(--color-negative);
 
 	border: 0;
 	padding: var(--padding-tiny);
 }
 
 .Input__errortext {
-	
+	color: var(--color-primary);
 }
