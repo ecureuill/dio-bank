@@ -1,15 +1,14 @@
-import { faker } from '@faker-js/faker/locale/pt_BR';
 import { useContext, useId, useState } from 'react';
 import { Avatar, Button, Icons, Text } from '../.';
+import { ReactComponent as Logo } from '../../assets/logo.svg';
 import { AuthContext } from '../../context/auth.context';
 import { LocaleContext } from '../../context/locale.context';
-import './styles.css';
-import { ReactComponent as Logo } from '../../assets/logo.svg';
 import ThemeSwitcher from '../ThemeSwitcher';
+import './styles.css';
 const Header = (): JSX.Element => {
 
 	const { resources } = useContext(LocaleContext);
-	const { authenticated } = useContext(AuthContext);
+	const { authenticated, user } = useContext(AuthContext);
 
 	const [ opened, setOpened ] = useState(false);
 
@@ -32,12 +31,12 @@ const Header = (): JSX.Element => {
 									{opened? resources['controls.buttons.menu.close.description'] : resources['controls.buttons.menu.open.description']}
 								</span>
 							</Button>
-							<Avatar />
+							<Avatar src={user!.avatar} alt={user!.name}/>
 							<Icons>notifications</Icons>
 						</div>
 						<div className={'Header__salut'}>
 							<Text size='medium'>
-								{resources['components.heading.salut'].replace('%s', faker.person.firstName())}
+								{resources['components.heading.salut'].replace('%s', user!.name)}
 							</Text>
 						</div>
 					</>
