@@ -32,7 +32,7 @@ export const LocaleContextProvider = ({ children }: PropsWithChildren) => {
 	useEffect(() => {
 		const val = localStorage.getItem('@APP:locale');
 		if(val!== null)
-			setLocale(JSON.parse(val));
+			setLocale(val);
 
 		console.debug(resources);
 	}, []); 
