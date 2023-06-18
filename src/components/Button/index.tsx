@@ -2,7 +2,7 @@ import { ComponentPropsWithoutRef, PropsWithChildren } from 'react';
 import './styles.css';
 
 interface ButtonProps extends ComponentPropsWithoutRef<'button'> {
-	size?: 'fill' | 'icon'
+	size?: 'fill' | 'icon' | 'narrow'
 }
 
 const Button = ( {size, children, className,...props}: PropsWithChildren<ButtonProps>): JSX.Element => {
