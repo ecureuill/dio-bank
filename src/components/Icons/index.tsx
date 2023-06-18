@@ -1,9 +1,20 @@
 import { PropsWithChildren } from 'react';
 import './styles.css';
 
-const Icons = ( {children}: PropsWithChildren): JSX.Element => {
+type IconsProps = {
+	className?: string
+	size?: 'large' | 'medium'
+};
+
+const Icons = ( {children, className, size}: PropsWithChildren<IconsProps>): JSX.Element => {
 	return (
-		<span aria-hidden='true' className='material-icon'>{children}</span>
+		<span aria-hidden='true' 
+			className={`material-icon 
+				${className? className: ''}
+				${size? `material-icon--${size}`: ''}`}
+		>
+			{children}
+		</span>
 	);
 };
 

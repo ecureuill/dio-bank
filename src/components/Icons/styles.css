@@ -23,3 +23,17 @@
   /* Support for IE. */
   font-feature-settings: 'liga';
 }
+
+.material-icon--large {
+  width: 100%;
+
+  font-size: clamp(12em, 60vw, 60vw);
+  text-align: center;
+}
+
+.material-icon--medium {
+  width: 100%;
+
+  font-size: clamp(7em, 20vw, 20vw);
+  text-align: center;
+}
