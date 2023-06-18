@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/dio-bank/static/css/main.c3343109.css",
-    "main.js": "/dio-bank/static/js/main.e1dc4cb2.js",
+    "main.js": "/dio-bank/static/js/main.85d207f6.js",
     "static/media/logo.png": "/dio-bank/static/media/logo.19e5acc2c9a6b3402d5e.png",
     "static/media/logo.svg": "/dio-bank/static/media/logo.cec614c07990cd1d196fa49f308c328c.svg",
     "index.html": "/dio-bank/index.html",
     "main.c3343109.css.map": "/dio-bank/static/css/main.c3343109.css.map",
-    "main.e1dc4cb2.js.map": "/dio-bank/static/js/main.e1dc4cb2.js.map"
+    "main.85d207f6.js.map": "/dio-bank/static/js/main.85d207f6.js.map"
   },
   "entrypoints": [
     "static/css/main.c3343109.css",
-    "static/js/main.e1dc4cb2.js"
+    "static/js/main.85d207f6.js"
   ]
 }
