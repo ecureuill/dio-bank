@@ -11,6 +11,7 @@
 	background: url('/public/logo.png');
 	background-repeat: no-repeat;
 	background-size: 80%;
+    background-position: center; 
 }
 
 .OnBoardPage__header {

@@ -36,7 +36,7 @@ const LoginPage = (): JSX.Element => {
 		<>
 			<Header bg='transparent' />
 			<main>
-				<Icons size='medium'>fingerprint</Icons>
+				<Icons size='medium' className='center'>fingerprint</Icons>
 				<Form 
 					title={resources['pages.login.heading.title']}
 					handleSubmit={handleSubmit}

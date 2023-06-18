@@ -13,7 +13,7 @@ const OnBoardPage = (): JSX.Element => {
 	useEffect(() => {
 		const id = setTimeout(() => {
 			setShow(true);
-		}, 2000);
+		}, 3000);
 
 		return () => clearTimeout(id);
 	}, []);
@@ -23,7 +23,7 @@ const OnBoardPage = (): JSX.Element => {
 
 	return (
 		<main className='OnBoardPage'>
-			<div className='OnBoardPage__logo slide-corner  flex-col'>
+			<div className='OnBoardPage__logo slide-corner  flex-col all-center'>
 				<div className='OnBoardPage__header' />
 				{show && 
 				<>
@@ -42,7 +42,6 @@ const OnBoardPage = (): JSX.Element => {
 							</figcaption>
 						</figure>
 					</Carousel>
-
 					<Link to='/login'>{resources['controls.buttons.onboard.get_started']}</Link>
 				</>
 				}
