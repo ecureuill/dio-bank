@@ -1,26 +1,22 @@
-import { createBrowserRouter } from 'react-router-dom';
-import HomePage from '../pages/HomePage';
-import Root from './root';
-import LoginPage from '../pages/LoginPage';
-import { RequireAuth } from './require.auth';
+import { useContext } from 'react';
+import { RouterProvider } from 'react-router-dom';
+import { AuthContext } from '../context/auth.context';
+import { router } from './auth.router';
+import { onbrouter } from './onboard.router';
 
-export const router = createBrowserRouter([
-	{
-		path: '/',
-		element: <Root />,
-		children: [
-			{
-				path: '',
-				element: <RequireAuth><HomePage /></RequireAuth>
-			},
-			{
-				path: '/home',
-				element: <RequireAuth><HomePage /></RequireAuth>
-			},
-			{
-				path: 'login',
-				element: <LoginPage />
-			},
-		]
-	}
-]);
+const Router = (): JSX.Element => {
+	
+	const { authenticated } = useContext(AuthContext);
+
+	if(authenticated)
+		return (
+			<RouterProvider router={router} />
+		);
+
+	return (
+		<RouterProvider router={onbrouter} />
+	);
+
+};
+
+export default Router;

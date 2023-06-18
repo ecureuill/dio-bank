@@ -6,11 +6,10 @@ import './styles/utilities/utils.css';
 
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { RouterProvider } from 'react-router-dom';
-import { router } from './routers';
 import { LocaleContextProvider } from './context/locale.context';
 import { ThemeProvider } from './context/theme.context';
 import { AuthProvider } from './context/auth.context';
+import Router from './routers';
 
 if (process.env['NODE_ENV'] !== 'production') {
 	// eslint-disable-next-line @typescript-eslint/no-var-requires
@@ -22,13 +21,12 @@ const root = ReactDOM.createRoot(
 	document.getElementById('root') as HTMLElement
 );
 
-
 root.render(
 	<React.StrictMode>
 		<LocaleContextProvider>
 			<AuthProvider>
 				<ThemeProvider>
-					<RouterProvider router={router} />
+					<Router />
 				</ThemeProvider>
 			</AuthProvider>
 		</LocaleContextProvider>
