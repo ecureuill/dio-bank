@@ -21,6 +21,22 @@
 .error {
   color: var(--color-error)
 }
+
+.wrapper {
+  width: 100%;
+
+  padding: var(--padding-medium);
+  border-radius: var(--radius);
+
+  background-color: var(--color-secondary);
+}
+
+.shadow {
+  box-shadow: 1px 1px var(--shadow) 0px rgba(0,0,0,0.35);
+}
+
+
+
 /************* BORDER *************/
 .border-none {
   border: 0;
@@ -53,7 +69,6 @@
   flex-direction: column;
 
   justify-content: flex-start;
-  align-items: center;
 }
 
 .flex-row {
@@ -63,6 +78,15 @@
   justify-content: flex-start;
   align-items: center;
 }
+
+.flex-row.space-between {
+  justify-content: space-between;
+}
+
+.flex-col.space-between {
+  align-items: space-between;
+}
+
 
 .all-center {
   justify-content: center;
@@ -76,6 +100,11 @@
 .gap-small {
   gap: var(--gap-small);
 }
+
+.wrap {
+  flex-wrap: wrap;
+}
+
 
 /****** ANIMATIONS ******/
 
