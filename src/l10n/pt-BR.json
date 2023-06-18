@@ -3,6 +3,9 @@
 	"controls.buttons.menu.close.description": "fechar menu",
 	"controls.buttons.menu.open.description": "abrir menu",
 	"controls.buttons.login.label": "Entrar",
+	"controls.buttons.onboard.next": "Próximo",
+	"controls.buttons.onboard.previous": "Anterior",
+	"controls.buttons.onboard.get_started": "Começar",
 
 	"controls.inputs.email.label": "E-mail",
 	"controls.inputs.password.label": "Senha",
