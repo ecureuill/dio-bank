@@ -1,0 +1,11 @@
+.PaymentCard {
+	position: relative;
+}
+
+.PaymentCard__calendar {
+	color: var(--color-primary);
+}
+
+.PaymentCard__add {
+	color: var(--color-primary);
+}
