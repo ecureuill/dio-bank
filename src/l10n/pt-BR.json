@@ -6,13 +6,28 @@
 	"controls.buttons.onboard.next": "Próximo",
 	"controls.buttons.onboard.previous": "Anterior",
 	"controls.buttons.onboard.get_started": "Começar",
+	"controls.buttons.signup.label": "Cadastrar",
+	"controls.buttons.pix.label": "PIX",
+	"controls.buttons.payment.label": "Pagar",
+	"controls.buttons.savings.label": "Cofrinho",
+	"controls.buttons.credit_cards.label": "Cartões",
+	"controls.buttons.bitcoin.label": "Bitcoin",
+	"controls.buttons.withdraw.label": "Saque",
+	"controls.buttons.attach_money.label": "Depósito",
 
 	"controls.inputs.email.label": "E-mail",
 	"controls.inputs.password.label": "Senha",
+	"controls.inputs.password_redo.label": "Confirmar senha",
+	"controls.inputs.fullname.label": "Nome completo",
+	"controls.inputs.cpf.label": "CPF",
 	
 	"components.heading.salut": "Oi, %s",
+	"components.payment_card.description": "Agende um pagamento",
 	
 	"pages.login.heading.title": "Entrar",
-	"pages.home.heading.title": "Olá",
-	"pages.home.heading.subtitle": "Boas-vindas"
+	"pages.login.link.not_user": "Não tem uma conta? Cadastrar",
+	"pages.signup.heading.title": "Cadastrar",
+	"pages.signup.link.already_user": "Já tem uma conta? Entrar",
+	"pages.home.heading.account_balance": "Seu saldo",
+	"pages.home.heading.card_balance": "Sua fatura atual"
 }
