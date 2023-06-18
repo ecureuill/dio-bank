@@ -1,11 +1,58 @@
 .OnBoardPage {
+	color:var(--color-zero);
+
 	background: var(--color-gradient);
 }
 
 .OnBoardPage__logo {
-	width: 90%;
-	height: 50%;
+	width: 100%;
+	height: 100%;
 
-	position: absolute;
-	top: 20%;
+	background: url('/public/logo.png');
+	background-repeat: no-repeat;
+	background-size: 80%;
+}
+
+.OnBoardPage__header {
+	width: 100%;
+	min-height: 128px;
+
+	flex-grow: 1;
+}
+
+@media screen and (max-width: 800px) {
+	.OnBoardPage__header {
+		min-height: 40px;
+	}
+}
+
+.Carousel {
+	width: clamp(280px, 100%, 800px);
+	height: 100%;
+
+	gap: clamp(40px, 10vh, 100px);
+}
+
+.OnBoardPage__figure {
+	width: 100%;
+	height: 80%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	
+	overflow: hidden;
+}
+
+.OnBoardPage__icon {
+	width: 100%;
+
+	font-size: clamp(12em, 60vw, 60vw);
+	text-align: center;
+}
+
+.OnBoardPage__caption {
+	width: 100%;
+
+	text-align: center;
 }
