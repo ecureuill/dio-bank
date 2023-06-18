@@ -1,6 +1,6 @@
 import { FormEvent, useContext, useState } from 'react';
 import { Link, Navigate } from 'react-router-dom';
-import { Button, Form, Input } from '../../components';
+import { Button, Form, Header, Icons, Input } from '../../components';
 import { AuthContext } from '../../context/auth.context';
 import { LocaleContext } from '../../context/locale.context';
 import { FormDataState } from '../../utils/types';
@@ -34,37 +34,41 @@ const LoginPage = (): JSX.Element => {
 
 	return (
 		<>
-			<Form 
-				title={resources['pages.login.heading.title']}
-				handleSubmit={handleSubmit}
-				setFormData={setFormData}
-				error={error}
-			>
-				<>
-					<Input 
-						required
-						name='email'
-						type='email'
-						label={resources['controls.inputs.email.label']}
-						aria-required={true}
-						aria-errormessage={formData?.['email']?.errormessage}
-						errormessage={formData?.['email']?.errormessage}
-						aria-invalid={!formData?.['email']?.valid}
-					/>
-					<Input
-						required
-						name='password'
-						type='password' 
-						label={resources['controls.inputs.password.label']}
-						aria-errormessage={formData?.['password']?.errormessage}
-						errormessage={formData?.['password']?.errormessage}
-						aria-invalid={!formData?.['password']?.valid}
-					/>
+			<Header />
+			<main>
+				<Icons size='medium'>fingerprint</Icons>
+				<Form 
+					title={resources['pages.login.heading.title']}
+					handleSubmit={handleSubmit}
+					setFormData={setFormData}
+					error={error}
+				>
+					<>
+						<Input 
+							required
+							name='email'
+							type='email'
+							label={resources['controls.inputs.email.label']}
+							aria-required={true}
+							aria-errormessage={formData?.['email']?.errormessage}
+							errormessage={formData?.['email']?.errormessage}
+							aria-invalid={!formData?.['email']?.valid}
+						/>
+						<Input
+							required
+							name='password'
+							type='password' 
+							label={resources['controls.inputs.password.label']}
+							aria-errormessage={formData?.['password']?.errormessage}
+							errormessage={formData?.['password']?.errormessage}
+							aria-invalid={!formData?.['password']?.valid}
+						/>
 
-					<Button type='submit' size='fill'>{resources['controls.buttons.login.label']}</Button>
-				</>
-			</Form>
-			<Link to='/signup' className='center'>Cadastrar</Link>
+						<Button type='submit' size='fill'>{resources['controls.buttons.login.label']}</Button>
+					</>
+				</Form>
+				<Link to='/signup' className='center'>Cadastrar</Link>
+			</main>
 		</>
 	);
 };
