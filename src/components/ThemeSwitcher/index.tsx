@@ -11,7 +11,7 @@ const ThemeSwitcher = (): JSX.Element => {
 				isDarkmode? 
 					<Icons>sunny</Icons>
 					:
-					<Icons>dark_mode</Icons>
+					<Icons className='material-icon--dark'>dark_mode</Icons>
 			}
 		</Button>
 	);
