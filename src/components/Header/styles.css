@@ -10,6 +10,9 @@
 	overflow: hidden;
 }
 
+.Header--transparent {
+	background: transparent;
+}
 
 .Header__menubar {
 	width: 100%;

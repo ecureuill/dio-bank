@@ -5,7 +5,12 @@ import { AuthContext } from '../../context/auth.context';
 import { LocaleContext } from '../../context/locale.context';
 import ThemeSwitcher from '../ThemeSwitcher';
 import './styles.css';
-const Header = (): JSX.Element => {
+
+type HeaderProps = {
+	bg?: 'transparent';
+}
+
+const Header = ({bg} : HeaderProps): JSX.Element => {
 
 	const { resources } = useContext(LocaleContext);
 	const { authenticated, user } = useContext(AuthContext);
@@ -15,7 +20,7 @@ const Header = (): JSX.Element => {
 	const spanId = useId();
 
 	return (
-		<header className={'Header'}>
+		<header className={`Header ${bg? 'Header--transparent': ''}`}>
 			{
 				authenticated? 
 					<>

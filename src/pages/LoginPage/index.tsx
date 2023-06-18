@@ -34,7 +34,7 @@ const LoginPage = (): JSX.Element => {
 
 	return (
 		<>
-			<Header />
+			<Header bg='transparent' />
 			<main>
 				<Icons size='medium'>fingerprint</Icons>
 				<Form 
