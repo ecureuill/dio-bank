@@ -5,4 +5,5 @@
 	--size-large: clamp(1.25rem, 0vw + 1.25rem, 1.25rem); 
 	--size-medium: clamp(1.625rem, 0.462vw + 1.505rem, 1.875rem);
 	--size-small:  clamp(1rem, 0.115vw + 0.97rem, 1.063rem); 
+	--size-tiny:  clamp(0.75rem, 0.462vw + 0.63rem, 1rem); 
 } 
