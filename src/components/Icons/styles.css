@@ -25,15 +25,21 @@
 }
 
 .material-icon--large {
-  width: 100%;
-
   font-size: clamp(12em, 60vw, 60vw);
-  text-align: center;
 }
 
 .material-icon--medium {
-  width: 100%;
-
   font-size: clamp(7em, 20vw, 20vw);
-  text-align: center;
+}
+
+.material-icon--small {
+  font-size: clamp(2em, 20vw, 7em);
+}
+
+.material-icon--tiny {
+  font-size: clamp(1em, 15vw, 4em);
+}
+
+.material-icon--dark {
+  color: var(--color-negative)
 }

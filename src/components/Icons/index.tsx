@@ -3,7 +3,7 @@ import './styles.css';
 
 type IconsProps = {
 	className?: string
-	size?: 'large' | 'medium'
+	size?: 'large' | 'medium' | 'small' | 'tiny'
 };
 
 const Icons = ( {children, className, size}: PropsWithChildren<IconsProps>): JSX.Element => {
